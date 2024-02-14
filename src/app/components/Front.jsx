@@ -6,31 +6,32 @@ import WelcomeImg from "../../../public/assets/welcome_img.svg";
 import Subscribe from "./Subscribe";
 import SubscribeCTA from "./SubscribeCTA";
 import MyCarousel from "./MyCarousel";
+import Findus from "./Findus";
 
 const Front = () => {
   return (
     <div>
       <div className="relative w-full h-[30vh] md:h-[50vh] lg:[50vh] xl:h-[60vh] 2xl:h-[70vh] mt-[6.5rem] lg:mt-36">
         <div className="hidden md:block">
-        <Image
-          alt="hero-image"
-          src={GroveImg}
-        layout="fill"
-        objectFit="cover"
-          objectPosition="center"
-        />
+          <Image
+            alt="hero-image"
+            src={GroveImg}
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+          />
         </div>
-       
-     <div className="md:hidden">
-     <Image
-          alt="hero-image"
-          src={GroveImgMob}
-          className="md:hidden"
-          layout="fill"
-        objectFit="cover"
-          objectPosition="center"
-        />
-     </div>
+
+        <div className="md:hidden">
+          <Image
+            alt="hero-image"
+            src={GroveImgMob}
+            className="md:hidden"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+          />
+        </div>
       </div>
       <div className="bg-primary">
         <SubscribeCTA />
@@ -46,7 +47,6 @@ const Front = () => {
                   src={WelcomeImg}
                   alt="welcome-grove"
                   className="w-full"
-                  
                 />
               </div>
               {/* Text */}
@@ -78,8 +78,10 @@ const Front = () => {
           </div>
         </div>
         <MyCarousel />
+        <div className="bg-white">
+          <Findus />
+        </div>
         <Subscribe />
-        
       </div>
     </div>
   );
